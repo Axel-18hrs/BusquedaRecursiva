@@ -32,7 +32,7 @@ namespace BusquedaRecursiva
         {
             if (string.IsNullOrEmpty(mainFolder))
             {
-                MessageBox.Show("Main folder is empty...");
+                MessageBox.Show("Main folder is empty.");
                 return;
             }
 
