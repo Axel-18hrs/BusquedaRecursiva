@@ -41,7 +41,6 @@
             this.dgvFolders.RowTemplate.Height = 24;
             this.dgvFolders.Size = new System.Drawing.Size(1178, 616);
             this.dgvFolders.TabIndex = 0;
-            this.dgvFolders.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Form1
             // 
