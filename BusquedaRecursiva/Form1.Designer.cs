@@ -35,11 +35,11 @@
             // dgvFolders
             // 
             this.dgvFolders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFolders.Location = new System.Drawing.Point(12, 12);
+            this.dgvFolders.Location = new System.Drawing.Point(0, -3);
             this.dgvFolders.Name = "dgvFolders";
             this.dgvFolders.RowHeadersWidth = 51;
             this.dgvFolders.RowTemplate.Height = 24;
-            this.dgvFolders.Size = new System.Drawing.Size(1154, 590);
+            this.dgvFolders.Size = new System.Drawing.Size(1178, 616);
             this.dgvFolders.TabIndex = 0;
             this.dgvFolders.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -51,7 +51,7 @@
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1178, 614);
             this.Controls.Add(this.dgvFolders);
-            this.MinimizeBox = false;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

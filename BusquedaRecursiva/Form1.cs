@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 
@@ -38,21 +39,23 @@ namespace BusquedaRecursiva
             foreach (string subFolder in Directory.GetDirectories(mainFolder))
             {
                 dgvFolders.Rows.Add("> " + subFolder.PadRight(15));
+                dgvFolders.Rows[dgvFolders.Rows.Count - 1].DefaultCellStyle.BackColor = Color.Coral;
                 Console.WriteLine("\n " + subFolder);
 
                 foreach (string file in Directory.GetFiles(subFolder))
                 {
                     dgvFolders.Rows.Add(file);
+                    dgvFolders.Rows[dgvFolders.Rows.Count - 1].DefaultCellStyle.BackColor = Color.White;
                     Console.WriteLine(file);
                 }
 
                 FileRevision(subFolder);
             }
         }
-
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
     }
 }
+
